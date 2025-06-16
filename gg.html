@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Certificate Slider</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .swiper {
+      width: 100%;
+      height: auto;
+      padding: 2vw 0;
+    }
+
+    .imgggg {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1vw;
+      gap: 5px;
+    }
+
+    .imgc {
+      height: 100%;
+      width: calc(100% / 5);
+      background-color: #010101;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 1vw;
+    }
+
+    .imgc img {
+      width: 80%;
+      object-fit: contain;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .imgggg img:hover {
+      transform: scale(1.05);
+    }
+
+    .imgc .desc {
+      text-align: center;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 8px;
+    }
+
+    .imgc .desc strong {
+      font-size: 1rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper imgggg">
+
+      <div class="swiper-slide imgc">
+        <img src="certAghaz.jpg" alt="Certificate Aghaz" class="lightbox-trigger">
+        <div class="desc">
+          <strong>Aaghaaz 2.5 Web Battle</strong>
+          1st place in a web development challenge, Feb 2025.
+        </div>
+      </div>
+
+      <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>   <div class="swiper-slide imgc">
+        <img src="uiux.jpg" alt="UI UX Certificate" class="lightbox-trigger">
+        <div class="desc">
+          <strong>UI/UX – Techno Jashn</strong>
+          Top position in UI/UX competition, Dec 2024.
+        </div>
+      </div>
+
+      <!-- Add more slides if needed -->
+
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 20,
+      speed: 3000, // controls the smoothness
+      autoplay: {
+        delay: 0, // no delay between transitions
+        disableOnInteraction: false,
+      },
+      allowTouchMove: false, // disables swipe manually
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        480: { slidesPerView: 1 }
+      }
+    });
+  </script>
+
+</body>
+</html>
